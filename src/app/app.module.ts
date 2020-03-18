@@ -12,6 +12,7 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { from } from 'rxjs';
 import { AnimationsComponent } from './animations/animations.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AnimationsComponent } from './animations/animations.component';
     NgIfComponent,
     BindingComponent,
     EventbindingComponent,
-    AnimationsComponent
+    AnimationsComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
