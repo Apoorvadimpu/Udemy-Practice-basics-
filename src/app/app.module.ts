@@ -9,9 +9,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { BindingComponent } from './binding/binding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-import { from } from 'rxjs';
-import { AnimationsComponent } from './animations/animations.component';
+
+
 import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
@@ -23,13 +22,13 @@ import { DemoComponent } from './demo/demo.component';
     NgIfComponent,
     BindingComponent,
     EventbindingComponent,
-    AnimationsComponent,
+    // AnimationsComponent, 
     DemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    // BrowserAnimationsModule
 
   ],
   providers: [],
