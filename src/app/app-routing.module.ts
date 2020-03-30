@@ -6,6 +6,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { BindingComponent } from './binding/binding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { DemoComponent } from './demo/demo.component';
 
 
 const routes: Routes = [
@@ -32,6 +34,14 @@ const routes: Routes = [
   {
     path:'eventbinding',
     component: EventbindingComponent
+  },
+  {
+    path:'component-interaction',
+    component: ComponentInteractionComponent
+  },
+  {
+    path:'demo',
+    component: DemoComponent
   },
 
   {
