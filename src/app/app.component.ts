@@ -2,13 +2,22 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template:`
-  <app-demo (emitevent)="emitonfun($event)"></app-demo>`,
+  template: `
+  <app-demo (emitevent)="emitonfun($event)"></app-demo>
+  <hr>
+  <h3>Result:</h3>
+  <div *ngFor='let server of servers'>
+  <label><strong>Server Name: </strong>{{server.name}}</label>
+  <br>
+  <label><strong>Server Type: </strong>{{server.servertype}}</label>
+  <hr>
+  </div>
+  `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 
-  servers=[{name:'harry',type:'Sever',servertype:'nginx'}];
+  servers = [{ name: 'harry', type: 'Sever', servertype: 'nginx' }];
 
   // message: any;
   // messagerecieve($event){
@@ -16,8 +25,9 @@ export class AppComponent {
   // }
 
 
-  emitonfun(Data:{typeName:string,servertypeName:string}){
-     this.servers.push({name:'harry',type :Data.typeName,servertype:Data.servertypeName});
+  emitonfun(Data: { typeName: string, servertypeName: string }) {
+    // console.log(Data);
+    this.servers.push({ name: Data.typeName, type: "server", servertype: Data.servertypeName });
   }
 
 
