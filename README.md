@@ -1,5 +1,7 @@
 # Udemypractice
 
+The udemy practice branch is created from the udemy course - Learn Angular 4 from scratch
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
 
 ## Development server
